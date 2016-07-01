@@ -1,0 +1,112 @@
+@charset "UTF-8";
+html{
+		font-size:62.5%;
+	}
+	body{
+		background:url("../images/bg-test.png");
+	}
+	.container{
+		max-width:640px;
+		border:1px solid #cecece;
+		border-radius:5px;
+		box-shadow: 0 0 5px #cecece;
+		margin:0 auto;
+		padding:20px;
+		font-size:1.6rem;
+	}
+	.header-img{
+        display:-webkit-flex;
+        display:-moz-flex;
+        display:-ms-flex;
+		display:flex;
+	}
+	.header-img img{
+		width:49%;
+        -webkit-filter:blur(10);
+        -moz-filter:blur(10);
+
+	}
+	.header-img img:first-child{
+		margin-right:2%;
+	}
+	.regulator-main{
+		max-width:320px;
+		margin:25px auto;
+		position: relative;
+	}
+	.box{
+        display:-webkit-flex;
+        display:-moz-flex;
+        display:-ms-flex;
+		display: flex;
+		margin-top:15px;
+		justify-content: flex-end;
+	}
+
+	input[type="range"] {
+            -webkit-appearance: none;/* 隐藏滑块，以便自定义滑块样式 */ 
+            width: 100%; /* Firefox下所需 */ 
+            overflow: hidden;
+            height: 16px;
+            outline: none;/* 去掉默认蓝色边框 */  
+            background: none;
+        }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 12px;
+        height: 12px;
+        margin-top: -3px;
+        background: #18bc9c;
+        border-radius: 50%;
+        transition: .2s;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 6px;
+        border-radius: 3px;
+        background: #ecf0f1;
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb,
+    input[type="range"]::-webkit-slider-thumb:hover {
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        border: none;
+        width: 12px;
+        height: 12px;
+        margin-top: -3px;
+        background: #18bc9c;
+        border-radius: 50%;
+        transition: .2s;
+    }
+
+    input[type="range"]::-moz-range-track {
+        height: 6px;
+        border-radius: 3px;
+        background: #ecf0f1;
+    }
+
+    input[type="range"]:active::-moz-range-thumb,
+    input[type="range"]::-moz-range-thumb:hover {
+        border: none;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    input[type="range"]::-moz-focus-outer{
+        border:none;    /* 去除 focus 时候的外框虚线 */
+    }
+
+	@media only screen and (max-width:768px){
+		.container{
+			font-size:1.4rem;
+		}
+	}
